@@ -1,0 +1,72 @@
+% Created 2023-08-10 Thu 14:06
+% Intended LaTeX compiler: pdflatex
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{soul}
+
+\usepackage[
+backend=biber,
+]{biblatex}
+\addbibresource{ref.bib} %Imports bibliography file
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+
+% Used to get figure to stick within text area
+\usepackage{float}
+
+% Used for fancy header
+\usepackage{fancyhdr}
+
+% Used for algorithm drawing
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[margin=2cm]{geometry}
+\setlength{\headheight}{50pt}
+\setcounter{secnumdepth}{0}
+
+% header information
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\includegraphics[width=3cm]{images/luddy.jpg}}
+\fancyhead[C]{\hl{CLASS HERE}}
+\fancyhead[R]{\thepage}
+
+% Start of document
+\title{\hl{Assignment}}
+\author{Christopher Sozio}
+\date{\today}
+
+
+%\bibliographystyle{plain}
+ 
+\begin{document}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+\section{Section Header}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=12cm,height=6cm]{images/luddy.jpg}
+\caption{\label{fig:example}Example caption}
+\end{figure}
+
+\printbibliography
+
+\end{document}
